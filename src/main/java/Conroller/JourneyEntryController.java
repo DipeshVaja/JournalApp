@@ -24,10 +24,10 @@ public class JourneyEntryController {
     }
 
     @PostMapping
-    public void createMapping(@RequestBody JournalEntry myEntry)
+    public Boolean createMapping(@RequestBody JournalEntry myEntry)
     {
-
-
+        journalEntries.put(myEntry.getId(),myEntry);
+        return true;
 
     }
 }
