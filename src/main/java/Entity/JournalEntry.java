@@ -2,9 +2,26 @@ package Entity;
 
 public class JournalEntry {
 
-    public int id;
-    public String title;
-    private String Content;
+    private Long id;
+    private String title;
+    private String content;
+
+    public JournalEntry() {
+    }
+
+    public JournalEntry(Long id, String title, String content) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
@@ -14,20 +31,12 @@ public class JournalEntry {
         this.title = title;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getContent() {
-        return Content;
+        return content;
     }
 
     public void setContent(String content) {
-        Content = content;
+        this.content = content;
     }
 
 }
