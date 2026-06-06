@@ -68,6 +68,7 @@ public class JourneyEntryController {
         if (removed == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
+
         return ResponseEntity.noContent().build();
     }
 
